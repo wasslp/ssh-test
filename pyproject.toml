@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qcworld"
+version = "0.1.0"
+description = "一个简单的问候程序"
+requires-python = ">=3.8"
+
+[project.scripts]
+qcworld = "qcworld.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
